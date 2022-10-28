@@ -1,129 +1,219 @@
-.container {
-  padding: 0 2rem;
+/* navbar */
+
+.navBtn {
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  height: fit-content;
+}
+.navBtn:hover {
+  box-shadow: 0px 0px 4px #000;
+  transition: 0.2s ease-in-out;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+/* login page */
+
+.loginWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.joinWithGoogle:hover {
+  box-shadow: 0px 0px 10px rgb(74, 74, 74);
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+/* creat a post page */
+
+.newPost {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.newPost .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.newPost textarea {
+  height: 150px;
+  border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.newPost textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
+.redOutline:focus {
+  outline: 2px solid red !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.newPost button {
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 7px;
+  margin-top: 10px;
+  color: white;
+}
+
+.newPost button:hover {
+  background-color: #058da5;
+  transition: all 0.2s ease-in-out;
+}
+
+.newPost button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* home page */
+
+.hommeWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* dasshboard page */
+
+.userPostWrppaer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 40px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
+  height: 65vh;
+  overflow-y: auto;
+}
+
+.logoutBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
+}
+
+.logoutBtn button {
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  padding: 7px;
+  width: 200px;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  height: fit-content;
+  border: none;
+  outline: none;
+}
+.logoutBtn button:hover {
+  box-shadow: 0px 0px 4px #000;
+  transition: 0.2s ease-in-out;
+}
+
+/* lougout config page */
+
+.logoutConfiWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.91);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutConfiWrapper > div {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* post details page */
+
+.postDetailesWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.41);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.postDetailesWrapper input {
+  background-color: #212529;
+  border-radius: 10px;
+  width: 90%;
+  padding: 8px;
+  color: white;
+  border: none;
+  margin-right: 5px;
+}
+
+
+.postDetailesWrapper input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.postDetailesWrapper input::placeholder {
+  color: lightgray;
+}
+
+
+.postDetailesWrapper button {
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 5px;
+
+  color: white;
+}
+
+.postDetailesWrapper button:disabled {
+ opacity: 0.5;
+}
+
+.postDetailesWrapper button:hover {
+  box-shadow: 0px 0px 4px #000;
+  transition: 0.2s ease-in-out;
 }
