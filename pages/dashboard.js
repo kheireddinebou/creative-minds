@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { signOut } from "firebase/auth";
 import { auth, db } from "../utils/firebase";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import {
   collection,
   deleteDoc,
@@ -50,7 +50,6 @@ const Dashboard = () => {
     user ? route.push("/dashboard") : route.push("/auth/login");
     user && user.uid && getUserPosts();
   }, [user]);
-
 
   return (
     <>

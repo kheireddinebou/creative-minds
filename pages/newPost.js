@@ -9,7 +9,7 @@ import { setRevalidateHeaders } from "next/dist/server/send-payload";
 import { useRouter } from "next/router";
 import React, { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import { db } from "../utils/firebase";
 
 const { form, newPost, redOutline } = styles;

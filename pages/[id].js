@@ -10,7 +10,7 @@ import {
 } from "firebase/firestore";
 import Post from "../components/Post";
 import { auth, db } from "../utils/firebase";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import { AuthContext } from "../context/AuthContext";
 import { format } from "timeago.js";
 

@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import Post from "../components/Post";
 import { AuthContext } from "../context/AuthContext";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import { db } from "../utils/firebase";
 
 const { hommeWrapper } = styles;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
 import { useTheme } from "../context/theme";
